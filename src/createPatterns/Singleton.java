@@ -1,4 +1,4 @@
-package Singleton;
+package createPatterns;
 
 public class Singleton {
 	/*
@@ -8,15 +8,18 @@ public class Singleton {
 	 * 
 	 * 
 	 */
+	//当存在多个子类时,使用if语句来判断并决定创建哪个实例
 	public class MazeFactory{
 		public static  MazeFactory instance = null;
+		//私有构造方法保证只有一个实例
 		private MazeFactory() {
 		}
-		public MazeFactory instance(){
+		public static MazeFactory instance(){
 			if(instance == null){
 				instance = new MazeFactory();
 			}
 			return instance;
 		}
 	}
+	
 }
