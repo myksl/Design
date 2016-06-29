@@ -64,7 +64,7 @@ public class Composite {
 	}
 	//定义特定的组合类,通过继承CompositeEquipment的方式实现
 	public class Chassis extends CompositeEquipment{
-	
+	//在客户使用时,组合对象和单个对象具有一致性,并没有显式的区别,可以一同使用
 	public class Client{
 		public static void main(String[] args) {
 			Chassis ch = new Chassis("Pc chassis");
